@@ -1,0 +1,9 @@
+  name       = "TESTVPC"
+  custom_azs = ["ap-southeast-2a", "ap-southeast-2b","ap-southeast-2c"]
+  az_count = 3
+  cidr_range             = "10.201.1.0/24"
+  public_cidr_ranges     = ["10.201.1.0/27", "10.201.1.32/27","10.201.1.64/27"]
+  public_subnets_per_az  = 1
+  private_cidr_ranges    = ["10.201.1.96/27","10.201.1.128/26", "10.201.1.192/26"]
+  private_subnets_per_az = 1
+  vpn_route_destination = ["192.168.0.0/16","10.0.0.0/8","203.15.145.110/32","210.215.131.152/29","172.16.0.0/12"]
